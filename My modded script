@@ -1327,7 +1327,7 @@ cookieBanned: function(src) { //todo add a way to undo later
             name = cookie.substr(cookie.indexOf(" ")+1);
         }
         kickbot.sendAll(sys.name(src) + " has been banned by cookie" + (name ? " [Original Name: " + name + "]." : "."), sys.channelId("Watch"));
-        normalbot.sendMessage(src, "You have been banned from the server, If you think this is a mistake post here: http://ultimate-battalion.proboards.com/thread/8/ban-poll");
+        normalbot.sendMessage(src, "You have been banned from the server, If you think this is a mistake then please speak to a respected auth on another server (Silver Light)");
         sys.kick(src);
         return true;
     } else if (cookie === "muted" || cookie.substr(0, 5) === "muted") {
